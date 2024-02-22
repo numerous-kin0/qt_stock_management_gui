@@ -1,0 +1,1 @@
+# qt_stock_management_gui
