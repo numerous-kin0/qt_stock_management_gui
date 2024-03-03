@@ -155,12 +155,3 @@ void ChangeItemDialog::disableBarcodeField()
 {
     barcodeLineEdit->setReadOnly(true);
 }
-
-
-/*
-Item ChangeItemDialog::getItem() const
-{
-    return someItem;
-}
-*/
-
