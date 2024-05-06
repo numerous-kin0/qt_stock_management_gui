@@ -29,16 +29,11 @@ MainWindow::MainWindow(QWidget *parent)
     exitAction = new QAction("Exit");
     QIcon icon1("C:/Users/realm/OneDrive/Documents/QtProjects/icons/x.png");
     exitAction->setIcon(icon1);
-    //quitAction closes the application
-    //This line of code can be used for Question 3 but it
-    //be renamed to "Exit"
-
+    
     connect(exitAction,&QAction::triggered,[=](){
         QApplication::quit();
-    }); //lambda function that quits the application
-    //lambda function will be absolutely necessary as
-    //the ui will be implemented using code
-
+    });
+    
     openAction = new QAction("Open");
     QIcon icon2("C:/Users/realm/OneDrive/Documents/QtProjects/icons/o.png");
     openAction->setIcon(icon2);
@@ -66,11 +61,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(changeAction,&QAction::triggered,this,[=]() {
         MainWindow::on_changeButton_clicked();
     });
-
-    //connect(addAction,&QAction::triggered,this,[=](){
-    //    MainWindow::on_addButton_clicked();
-    //});
-
+    
     //Add menubar
     QMenu *fileMenu = menuBar()->addMenu("File");
     fileMenu->addAction(openAction);
