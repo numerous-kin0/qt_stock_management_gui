@@ -47,7 +47,6 @@ ChangeItemDialog::ChangeItemDialog(QWidget *parent)
     okButton = new QPushButton("OK");
     cancelButton = new QPushButton("Cancel");
 
-    //connect(okButton, &QPushButton::clicked, this, &QDialog::accept);
     connect(okButton, &QPushButton::clicked, this, [=](){
         ChangeItemDialog::on_okButton_clicked();
     });
